@@ -1,0 +1,61 @@
+:global(body) {
+  background-color: #FFF;
+  color: #3F3F3F;
+  font-family: 'Quicksand';
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  padding: 100px;
+}
+
+.main .text {
+  padding: 0 0 0 6vw;
+}
+
+.main .text a {
+  color: #18C1E8;
+}
+
+.main .text .line {
+  font-size: 2vw;
+  font-weight: bold;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 40vw;
+}
+
+.main .text .big {
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.main .text .big .decorated {
+  background-color: white;
+  color: #DE6946;
+  padding: 10px;
+}
+
+.main .text hr {
+  border-style: solid;
+  border-width: 1.5px;
+  margin: 30px 15% 30px 0;
+}
+
+.main .text .small {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.main .image {
+  width: 30vw;
+}

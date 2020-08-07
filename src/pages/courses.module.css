@@ -1,0 +1,36 @@
+.container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+.section {
+  display: flex;
+}
+
+.section .icon {
+  min-width: 100px;
+}
+
+.courses {
+  margin: 45px 0 0 35px;
+}
+
+.coursePrompt {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.courseLink {
+  margin-bottom: 50px;
+}
+
+.courseLink a {
+  color: #18C1E8;
+  font-size: 2.2vw;
+  font-weight: bold;
+}

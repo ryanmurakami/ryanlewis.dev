@@ -1,0 +1,57 @@
+.header {
+  background-color: #DE6946;
+  color: white;
+  padding: 20px 30px;
+}
+
+.header .logo > a,
+.header .logo > a:hover,
+.header .logo > a:focus {
+  color: white;
+  font-size: 2.2vw;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header .menu {
+  align-items: center;
+  display: flex;
+  font-size: 1.2vw;
+  font-weight: bold;
+  justify-content: space-between;
+  letter-spacing: 3px;
+}
+
+.header .left,
+.header .right {
+  align-items: center;
+  display: flex;
+}
+
+.header .left {
+  justify-content: flex-start;
+}
+
+.header .right {
+  justify-content: flex-end;
+}
+
+.header .right > div {
+  font-size: 1.5vw;
+  margin-left: 2.5vw;
+}
+
+.header .left .item {
+  margin-left: 4vw;
+}
+
+.header .left > div > a,
+.header .right > div > a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .left > .item > a:focus,
+.header .left > .item > a:hover {
+  text-decoration: underline;
+}

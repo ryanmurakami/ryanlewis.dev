@@ -1,0 +1,46 @@
+.hidden {
+  left: -5000px;
+  position: absolute;
+}
+
+.visuallyHidden {
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+}
+
+.message {
+  font-size: 1.5vw;
+  font-weight: 200;
+  margin: 45px 0 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.input {
+  border: solid 1px #A3A3A3;
+  font-family: Quicksand;
+  padding: 10px;
+}
+
+.input::placholder {
+  color: #A3A3A3;
+}
+
+.button {
+  background: #18C1E8;
+  border: none;
+  border-radius: 0;
+  color: white;
+  font-family: Quicksand;
+  font-weight: bold;
+  height: 38px;
+  letter-spacing: 2px;
+  margin-left: 35px;
+  padding: 0 20px;
+}

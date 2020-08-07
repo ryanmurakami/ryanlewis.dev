@@ -1,0 +1,31 @@
+.container {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  padding: 100px;
+}
+
+.container .text {
+  max-width: 40vw;
+  padding: 0 0 0 4vw;
+}
+
+.container .text a {
+  color: #18C1E8;
+  font-weight: bold;
+}
+
+.container .text .title {
+  font-size: 2vw;
+  font-weight: bold;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 40vw;
+}
+
+.container .image {
+  width: 25vw;
+}
