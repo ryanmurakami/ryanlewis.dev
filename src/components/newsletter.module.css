@@ -44,3 +44,23 @@
   margin-left: 35px;
   padding: 0 20px;
 }
+
+@media (max-width: 768px) {
+  .message {
+    font-size: 4vw;
+    margin: 25px 0 10px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .button {
+    margin: 15px 0 0;
+    width: 100%;
+  }
+}

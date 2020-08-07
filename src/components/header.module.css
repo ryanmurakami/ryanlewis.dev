@@ -55,3 +55,34 @@
 .header .left > .item > a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .header .menu,
+  .header .left {
+    flex-direction: column;
+  }
+
+  .header .logo {
+    margin-bottom: 10px;
+  }
+
+  .header .logo > a,
+  .header .logo > a:hover,
+  .header .logo > a:focus {
+    font-size: 8vw;
+  }
+
+  .header .menu .item,
+  .header .menu .right a {
+    font-size: 5vw;
+    margin-bottom: 10px;
+  }
+
+  .header .menu .right {
+    margin-top: 20px;
+  }
+
+  .header .menu .right > div {
+    margin: 0 15px;
+  }
+}

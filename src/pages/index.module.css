@@ -59,3 +59,24 @@
 .main .image {
   width: 30vw;
 }
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column-reverse;
+    padding: 10vw;
+  }
+
+  .main .image {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .main .text {
+    padding: 0;
+  }
+
+  .main .text .line {
+    font-size: 4vw;
+    max-width: 100%
+  }
+}
