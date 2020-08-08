@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { graphql, Link } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
 import 'typeface-quicksand'
 import styles from './index.module.css'
@@ -21,15 +22,21 @@ export const query = graphql`
 `
 
 export default ({ data }) => <>
+  <Helmet>
+    <html lang="en" />
+    <meta charSet="utf-8" />
+    <title>Ryan Lewis</title>
+    <link rel="canonical" href="https://ryanlewis.dev/" />
+  </Helmet>
   <Header />
-  <div className={styles.main}>
+  <main className={styles.main}>
     <div className={styles.image}>
       <Img fluid={data.self.childImageSharp.fluid} />
     </div>
     <div className={styles.text}>
-      <div className={styles.line}>
+      <h1 className={styles.line}>
         Hi, I'm Ryan, a <a href="https://www.linkedin.com/in/ryan-h-lewis/">Cloud Architect</a>.
-      </div>
+      </h1>
       <div className={styles.line}>
         I love <Link to="/courses">helping others learn</Link> about AWS.
       </div>
@@ -44,6 +51,6 @@ export default ({ data }) => <>
         </div>
       </div>
     </div>
-  </div>
+  </main>
   <Footer />
 </>

@@ -1,9 +1,10 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
 import 'typeface-quicksand'
-import styles from './about.module.css'
+import styles from './contact.module.css'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
@@ -20,8 +21,14 @@ export const query = graphql`
 `
 
 export default ({ data }) => <>
+  <Helmet>
+    <html lang="en" />
+    <meta charSet="utf-8" />
+    <title>Ryan Lewis - Contact</title>
+    <link rel="canonical" href="https://ryanlewis.dev/contact/" />
+  </Helmet>
   <Header />
-  <div className={styles.container}>
+  <main className={styles.container}>
     <div className={styles.image}>
       <Img fluid={data.about.childImageSharp.fluid} />
     </div>
@@ -35,6 +42,6 @@ export default ({ data }) => <>
         Send me an email: ryan (at) ryanlewis.dev
       </div>
     </div>
-  </div>
+  </main>
   <Footer />
 </>

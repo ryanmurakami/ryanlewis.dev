@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
 import 'typeface-quicksand'
 import styles from './about.module.css'
@@ -20,15 +21,21 @@ export const query = graphql`
 `
 
 export default ({ data }) => <>
+  <Helmet>
+    <html lang="en" />
+    <meta charSet="utf-8" />
+    <title>Ryan Lewis - About</title>
+    <link rel="canonical" href="https://ryanlewis.dev/about/" />
+  </Helmet>
   <Header />
-  <div className={styles.container}>
+  <main className={styles.container}>
     <div className={styles.image}>
       <Img fluid={data.about.childImageSharp.fluid} />
     </div>
     <div className={styles.text}>
-      <div className={styles.title}>
+      <h1 className={styles.title}>
         Hi, my name is Ryan!
-      </div>
+      </h1>
       <div className={styles.bio}>
         I’m a Cloud Architect and Instructor. I’ve architected and developed cloud applications, and led teams at Expedia, T-Mobile, and Kuali. I teach online with Pluralsight, O’Reilly, and LinkedIn Learning, and in person at Seattle Central College and the University of Washington.
         <br /><br />
@@ -37,6 +44,6 @@ export default ({ data }) => <>
         In my free time, I develop card games, run <a href="https://www.meatcube.com">MeatCubeLabel</a>, a record label that releases Japanese underground music, and co-host <a href="https://soundcloud.com/tabletennistalk">Table Tennis Talk</a>, a podcast about ping pong.
       </div>
     </div>
-  </div>
+  </main>
   <Footer />
 </>

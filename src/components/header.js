@@ -28,17 +28,17 @@ export default () => <>
       </div>
       <div className={styles.right}>
         <div>
-          <a href="https://twitter.com/ryanmurakami">
+          <a aria-label="Twitter" href="https://twitter.com/ryanmurakami">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
         </div>
         <div>
-          <a href="https://github.com/ryanmurakami">
+          <a aria-label="GitHub" href="https://github.com/ryanmurakami">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
         <div>
-          <a href="https://www.linkedin.com/in/ryan-h-lewis/">
+          <a aria-label="LinkedIn" href="https://www.linkedin.com/in/ryan-h-lewis/">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </div>

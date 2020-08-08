@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
 import 'typeface-quicksand'
 import styles from './courses.module.css'
@@ -27,8 +28,14 @@ export const query = graphql`
 `
 
 export default ({ data }) => <>
+  <Helmet>
+    <html lang="en" />
+    <meta charSet="utf-8" />
+    <title>Ryan Lewis - Courses</title>
+    <link rel="canonical" href="https://ryanlewis.dev/courses/" />
+  </Helmet>
   <Header />
-  <div className={styles.container}>
+  <main className={styles.container}>
     <div className={styles.section}>
       <div className={styles.icon}>
         <Img fluid={data.aws.childImageSharp.fluid} />
@@ -133,6 +140,6 @@ export default ({ data }) => <>
         </div>
       </div>
     </div>
-  </div>
+  </main>
   <Footer />
 </>

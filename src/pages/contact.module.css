@@ -5,7 +5,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
-  padding: 100px;
+  padding: 80px;
 }
 
 .container .text {
@@ -27,9 +27,36 @@
 }
 
 .container .text .bio {
-
+  font-size: 1.2vw;
 }
 
 .container .image {
   width: 25vw;
+}
+
+@media (max-width: 768px) {
+  .container {
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 25px 25px 100px 25px;
+  }
+
+  .container .image {
+    width: 80%;
+  }
+
+  .container .text {
+    max-width: 100%;
+    padding: 0 0 40px;
+    width: 80%;
+  }
+
+  .container .text .title {
+    font-size: 8vw;
+    max-width: 100%;
+  }
+
+  .container .text .bio {
+    font-size: 4.5vw;
+  }
 }

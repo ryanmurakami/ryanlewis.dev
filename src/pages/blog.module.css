@@ -1,6 +1,7 @@
 .container {
   align-items: flex-start;
   display: flex;
+  font-size: 1.5vw;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -33,6 +34,7 @@
 @media (max-width: 768px) {
   .container {
     align-items: center;
+    font-size: 4vw;
     padding: 100px 0 0;
     width: 100%;
   }

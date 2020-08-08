@@ -18,11 +18,15 @@
   font-weight: bold;
 }
 
+.container .text .bio {
+  font-size: 1.2vw;
+}
+
 .container .text .title {
   font-size: 2vw;
   font-weight: bold;
   line-height: 1.7;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   max-width: 40vw;
 }
 
@@ -46,8 +50,12 @@
     padding: 20px 0 0;
   }
 
+  .container .text .bio {
+    font-size: 4.3vw;
+  }
+
   .container .text .title {
-    font-size: 5vw;
+    font-size: 7vw;
     max-width: 100%;
   }
 }
