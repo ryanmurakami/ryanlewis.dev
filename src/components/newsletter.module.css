@@ -56,6 +56,11 @@
   }
 
   .input {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .text {
     width: 100%;
   }
 

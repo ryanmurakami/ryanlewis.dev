@@ -26,10 +26,28 @@
   max-width: 40vw;
 }
 
-.container .text .bio {
-
-}
-
 .container .image {
   width: 25vw;
+}
+
+@media (max-width: 768px) {
+  .container {
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 25px 100px 25px;
+  }
+
+  .container .image {
+    width: 80%;
+  }
+
+  .container .text {
+    max-width: 100%;
+    padding: 20px 0 0;
+  }
+
+  .container .text .title {
+    font-size: 5vw;
+    max-width: 100%;
+  }
 }

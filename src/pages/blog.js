@@ -1,7 +1,7 @@
 import React from 'react'
 
 import 'typeface-quicksand'
-import styles from './courses.module.css'
+import styles from './blog.module.css'
 import Header from '../components/header'
 import Footer from '../components/footer'
 

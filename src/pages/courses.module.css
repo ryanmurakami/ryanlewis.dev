@@ -34,3 +34,30 @@
   font-size: 2.2vw;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .section {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section .icon {
+    width: 40%;
+  }
+
+  .courses {
+    margin: 45px 35px 0 35px;
+  }
+
+  .coursePrompt {
+    font-size: 4vw;
+  }
+
+  .courseLink a {
+    font-size: 5vw;
+  }
+}

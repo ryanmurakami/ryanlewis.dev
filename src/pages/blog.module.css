@@ -29,3 +29,11 @@
 .container .image {
   width: 25vw;
 }
+
+@media (max-width: 768px) {
+  .container {
+    align-items: center;
+    padding: 100px 0 0;
+    width: 100%;
+  }
+}
